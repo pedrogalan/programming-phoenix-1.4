@@ -41,7 +41,7 @@ defmodule Rumbl.Accounts do
     |> Repo.insert()
   end
 
-  def autenticate_by_username_and_pass(username, given_pass) do
+  def authenticate_by_username_and_pass(username, given_pass) do
     user = get_user_by(username: username)
 
     cond do
